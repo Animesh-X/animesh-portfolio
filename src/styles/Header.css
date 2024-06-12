@@ -1,0 +1,170 @@
+.header-section {
+    background-color: #CAFE96;
+}
+
+/* .header-section-image {
+    background-image: url("/src/assets/images/shape.svg");
+    background-size: cover; 
+    background-position: center; 
+    height: 1000px; 
+    width: 100%; 
+} */
+
+.header-text {
+    padding-top: 10px;
+    font-size: 60px;
+    margin-left: 15px;
+}
+
+.header-text-italics {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.header-text-position {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.header-position-italics {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: rgb(0, 69, 69);
+}
+
+.header-section-image-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.header-image-img-1 {
+    rotate: -1 1 -2 20deg;
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img-2 {
+    rotate: 1 1 2 20deg;
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img-3 {
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img-4 {
+    rotate: 1 1 2 30deg;
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img-5 {
+    transition: transform 1s ease-in-out;
+}
+
+.header-image-img-1:hover{
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+}
+
+.header-image-img-2:hover {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+.header-image-img-3:hover {
+    transform: rotate3d(1, 0, 1, 1turn);
+}
+
+.header-image-img-4:hover {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+.header-image-img-5:hover {
+    transform: rotate3d(1, 0, 1, 1turn);
+}
+
+.header-section-button {
+    background-color: #85c447;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-section-button-anchor {
+    text-decoration: none;
+    transition: transform 0.4s ease-in-out;
+}
+.header-section-button-anchor:hover {
+    transform: scale(1.1);
+}
+
+.header-image-wrapper {
+    border-radius: 5px;
+}
+
+.project-section {
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--projectBackgroundColor);
+    gap: 20px;
+    padding: 20px; 
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.header-image-container {
+    height: 75px;
+    width: 75px;
+    margin-right: 10px; 
+}
+
+.header-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-header-title {
+    color: #FFFFFF;
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.project-header-title-italics {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .project-header {
+        display: none;
+    }
+
+    .project-section {
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .header-section-image-container {
+        display: none;
+    }
+}

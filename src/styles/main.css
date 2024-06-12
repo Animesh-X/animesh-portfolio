@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Familjen Grotesk", sans-serif;
+    letter-spacing: 1px;
+}
+
+:root {
+    --mainColor: #29335c;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #db2b39;
+    --textColor: #eee;
+    --navColor: #4393F1;
+    --navTextColor: #CAFE96;
+    --navSecondaryTextColor: #32312F;
+    --projectBackgroundColor: #1B1B1B;
+    --cardBackgroundColor: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 2rem;
+    background-color: var(--navColor);
+    color: var(--navTextColor);
+    
+}
+
+.nav-name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+
+.nav-name-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav a {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 0 1.5rem;
+    color: var(--navTextColor);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--navSecondaryTextColor);
+}
+
+.navbar .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--navTextColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.navbar,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--navColor);
+        transition: 1s;
+    }
+
+    .navbar .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Academic Performance Tracker",
+        "body": "Developed a multi-user web application for educational institutions to track and analyze student academic performance.",
+        "technology": ["Node.JS", "Express.JS", "MySQL", "React.JS", "Material-UI"],
+        "imageURL": "/src/assets/images/academic_dark.png",
+        "githubURL": "https://github.com/Animesh-X/academic-tracking"
+    },
+    {
+        "title": "Social Media App",
+        "body": "Developed a responsive social media application using React.js, TypeScript, Tailwind CSS, and Appwrite for secure data storage.",
+        "technology": ["React.JS", "TypeScript", "TailWind CSS", "AppWrite"],
+        "imageURL": "/src/assets/images/social_media.png",
+        "githubURL": "https://github.com/Animesh-X/snapgram"
+    },
+    {
+        "title": "Jobs API Backend",
+        "body": "Developed a robust Node.js and Express.js backend project for a Jobs API, incorporating JWT token verification and secure password hashing",
+        "technology": ["Node.JS", "Express.JS", "MongoDB"],
+        "imageURL": "/src/assets/images/demo.jpeg",
+        "githubURL": "https://github.com/Animesh-X/jobs-api"
+    }
+]
