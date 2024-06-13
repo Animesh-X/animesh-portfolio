@@ -1,6 +1,7 @@
 import { FaLinkedinIn, FaGithub, FaRegCopyright } from "react-icons/fa";
-import "../styles/Footer.css"
+import Resume from "../assets/files/Resume.pdf";
 import Image from "../assets/images/footer_image.jpeg"
+import "../styles/Footer.css"
 function Footer () {
     return (
         <div className="footer-container">
@@ -14,7 +15,7 @@ function Footer () {
                     <hr className="footer-line"/>
                     <div className="footer-tags-container">
                         <div className="footer-anchor-container">
-                            <a className="footer-anchor" href="/src/assets/files/Resume.pdf" target="_blank" rel="noopener noreferrer">ABOUT</a>
+                            <a className="footer-anchor" href={Resume} target="_blank" rel="noopener noreferrer">ABOUT</a>
                             <a className="footer-anchor" href="#project">PROJECT</a>
                             <a className="footer-anchor" href="#contact">CONTACT</a>
                         </div>
