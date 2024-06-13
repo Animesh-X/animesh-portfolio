@@ -1,17 +1,44 @@
 import NavBar from "./NavBar";
 import Card from "./Card";
 import {motion} from "framer-motion";
-import projectData from "../assets/project-data.json";
+// import projectData from "../assets/project-data.json";
 import projectImg from "../assets/images/project-logo.png";
 import headerImg1 from "../assets/images/header-image-1.webp";
 import headerImg2 from "../assets/images/header-image-2.webp";
 import headerImg3 from "../assets/images/header-image-3.webp";
 import headerImg4 from "../assets/images/header-image-4.jpeg";
 import headerImg5 from "../assets/images/header-image-5.jpeg";
+
+import academicDarkImg from "../assets/images/academic_dark.png";
+import socialMediaImg from "../assets/images/social_media.png";
+import demoImg from "../assets/images/demo.jpeg";
 import Resume from "../assets/files/Resume.pdf";
 import "../styles/Header.css"
 
 function HeaderSection () {
+    const projectData = [
+        {
+            "title": "Academic Performance Tracker",
+            "body": "Developed a multi-user web application for educational institutions to track and analyze student academic performance.",
+            "technology": ["Node.JS", "Express.JS", "MySQL", "React.JS", "Material-UI"],
+            "imageURL": academicDarkImg,
+            "githubURL": "https://github.com/Animesh-X/academic-tracking"
+        },
+        {
+            "title": "Social Media App",
+            "body": "Developed a responsive social media application using React.js, TypeScript, Tailwind CSS, and Appwrite for secure data storage.",
+            "technology": ["React.JS", "TypeScript", "TailWind CSS", "AppWrite"],
+            "imageURL": socialMediaImg,
+            "githubURL": "https://github.com/Animesh-X/snapgram"
+        },
+        {
+            "title": "Jobs API Backend",
+            "body": "Developed a robust Node.js and Express.js backend project for a Jobs API, incorporating JWT token verification and secure password hashing",
+            "technology": ["Node.JS", "Express.JS", "MongoDB"],
+            "imageURL": demoImg,
+            "githubURL": "https://github.com/Animesh-X/jobs-api"
+        }
+    ];
     return (
         <header>
             <NavBar />
@@ -38,7 +65,6 @@ function HeaderSection () {
                     </div>
                 </div>
                 <div className="header-section-button">
-                    {/* <p>MORE ABOUT ME→</p> */}
                     <a className="header-section-button-anchor" href={Resume} target="_blank" rel="noopener noreferrer">MORE ABOUT ME→</a>
                 </div>
             </div>
