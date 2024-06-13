@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import cartoonImg from "../assets/images/cartoon.png";
 import "../styles/ContactSection.css";
 
 function ContactSection() {
@@ -118,7 +119,7 @@ function ContactSection() {
       >
         <img
           className="contact-container-image"
-          src="/src/assets/images/cartoon.png"
+          src={cartoonImg}
           alt="img"
         />
       </motion.div>
